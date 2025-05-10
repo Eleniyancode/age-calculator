@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "myFont";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-weight: bolder;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  /* width: 1000px; */
+  max-width: 90%;
+  padding-inline: 3rem;
+  padding-block: 6rem;
+  background-color: white;
+  border-radius: 30px;
+  border-bottom-right-radius: 100px;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  /* border: 1px solid green; */
+  /* width: 100%; */
+  padding: 1rem;
+  font-family: "myFont", sans-serif;
+  font-weight: bold;
+}
+
+.div-input {
+  /* border: 1px solid blue; */
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.div-input label {
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+.div-input input {
+  width: 95%;
+  display: block;
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+
+.div-input input::placeholder {
+  color: black;
+}
+
+.empty-div-section {
+  /* border: 2px solid blue; */
+  margin-block: 4rem;
+  position: relative;
+  height: 5rem;
+}
+
+.empty-div {
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 100%;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+}
+
+.icon-bg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result-section {
+  font-family: "myFont", sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+.result-section p {
+  /* border: 1px solid brown; */
+  line-height: 1;
+}
+
+.result-section p span {
+  color: hsl(259, 100%, 65%);
+}
