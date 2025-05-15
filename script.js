@@ -108,7 +108,7 @@ button.addEventListener("click", () => {
       console.log(resultMonth);
 
       if (resultMonth < 0) {
-        // resultYear--;
+        resultYear--;
         resultMonth += 12;
         console.log(resultMonth);
       }
@@ -118,7 +118,7 @@ button.addEventListener("click", () => {
       let resultDay = todayDate.getDate() - dayEl.value;
       console.log(resultDay);
       if (resultDay < 0) {
-        // resultMonth--;
+        resultMonth--;
         const prevMonth = new Date(
           todayDate.getFullYear(),
           todayDate.getMonth() + 1,
