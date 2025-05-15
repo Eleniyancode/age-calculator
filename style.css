@@ -89,6 +89,13 @@ form {
   color: black;
 }
 
+.div-input input:active,
+.div-input input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
 .empty-div-section {
   /* border: 2px solid blue; */
   margin-block: 4rem;
@@ -118,6 +125,11 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.icon-bg:hover {
+  background-color: black;
+  cursor: pointer;
 }
 
 .result-section {
