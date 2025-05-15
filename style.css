@@ -46,6 +46,13 @@ main {
   border-bottom-right-radius: 100px;
 }
 
+#test-output {
+  width: 80%;
+  height: 200px;
+  border: 2px solid black;
+  font-size: 2rem;
+}
+
 form {
   display: flex;
   gap: 1rem;
@@ -127,4 +134,28 @@ form {
 
 .result-section p span {
   color: hsl(259, 100%, 65%);
+  /* opacity: 0; */
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-inline: 8rem;
+  }
+  .empty-div-section {
+    /* padding-inline-end: 5rem; */
+    /* border: 2px solid red; */
+    width: 95%;
+  }
+
+  .icon-bg {
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    /* top: 0; */
+    width: 10rem;
+    height: 10rem;
+  }
+  .result-section p {
+    font-size: 7rem;
+  }
 }

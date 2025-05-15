@@ -21,32 +21,37 @@
     <main>
       <form action="get" novalidate>
         <div class="div-input">
-          <label for="day" class="day-label"> DAY </label>
+          <label for="day" class="day-label" id="label-day"> DAY </label>
           <input type="text" name="day" id="day" placeholder="DD" />
+          <p id="error-day"></p>
         </div>
 
         <div class="div-input">
-          <label for="month" class="month-label"> MONTH </label>
+          <label for="month" class="month-label" id="label-month">
+            MONTH
+          </label>
           <input type="text" name="month" id="month" placeholder="MM" />
+          <p id="error-month"></p>
         </div>
 
         <div class="div-input">
-          <label for="year" class="year-label"> YEAR </label>
+          <label for="year" class="year-label" id="label-year"> YEAR </label>
           <input type="text" name="year" id="year" placeholder="YYYY" />
+          <p id="error-year"></p>
         </div>
       </form>
 
       <section class="empty-div-section">
         <div class="empty-div"></div>
-        <div class="icon-bg">
+        <div class="icon-bg" id="button">
           <img src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
         </div>
       </section>
 
-      <section class="result-section">
-        <p><span>- -</span> years</p>
-        <p><span>- -</span> months</p>
-        <p><span>- -</span> days</p>
+      <section id="output" class="result-section">
+        <p id="year-output"><span id="result-year">- -</span> years</p>
+        <p id="month-output"><span id="result-month">- -</span> months</p>
+        <p id="day-output"><span id="result-day">- -</span> days</p>
       </section>
     </main>
     <!-- Day
