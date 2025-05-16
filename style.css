@@ -90,7 +90,14 @@ form {
 }
 
 .div-input input:active,
-.div-input input:focus {
+.div-input input:focus,
+.div-input input:hover {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+input:hover {
   outline: none;
   border-color: hsl(259, 100%, 65%);
   cursor: pointer;

@@ -117,6 +117,7 @@ button.addEventListener("click", () => {
       console.log(todayDate.getDate() - dayEl.value);
       let resultDay = todayDate.getDate() - dayEl.value;
       console.log(resultDay);
+      
       if (resultDay < 0) {
         resultMonth--;
         const prevMonth = new Date(
@@ -124,10 +125,12 @@ button.addEventListener("click", () => {
           todayDate.getMonth() + 1,
           0
         );
-        console.log(prevMonth);
+        // console.log(prevMonth);
+        console.log(prevMonth.getDate());
         resultDay += prevMonth.getDate();
       }
-
+      console.log(resultDay);
+      
       //Outputing the results
       //the age in years output
       const output1 = document.getElementById("result-year");
@@ -171,7 +174,7 @@ button.addEventListener("click", () => {
       const output3 = document.getElementById("result-day");
       output3.textContent = `${resultDay} `;
       const text3 = `${resultDay}`;
-
+      // console.log(text3);
       //adding typing animations to the display
       output3.textContent = "";
       let indexDay = 0;
@@ -180,7 +183,7 @@ button.addEventListener("click", () => {
         if (indexDay < text3.length) {
           output3.textContent += text3.charAt(indexDay);
           indexDay++;
-          setTimeout(typeMonthChar, 2000);
+          setTimeout(typeDayChar, 1000);
         }
       };
 
