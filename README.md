@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Eleniyancode/age-calculator/](https://your-solution-url.com)
-- Live Site URL: [https://eleniyancode.github.io/age-calculator/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Eleniyancode/age-calculator/](https://github.com/Eleniyancode/age-calculator/)
+- Live Site URL: [https://eleniyancode.github.io/age-calculator/](https://eleniyancode.github.io/age-calculator/)
 
 ## My process
 
